@@ -76,7 +76,6 @@
         BoldItalicFont = XCharter-BoldItalic,
         BoldSlantedFont = XCharter-BoldSlanted,
         SlantedFont = XCharter-Slanted,
-        RomanFont = XCharter-Roman,
     ]
 }
 

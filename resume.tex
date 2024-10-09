@@ -8,154 +8,227 @@
 \begin{document}
 
 %% basic personal info
-\name{Fan Nie}
+\name{Faye Nie}
 \begin{basicinfo}
-  \info{\email{niefan1208@gmail.com}}
-  % \info{\homepage{skyzh.dev}[https://skyzh.dev]}
+  \info{\email{niefan@stanford.edu}}
+  % \info{\email{niefan1208@gmail.com}}
+  % \info{\homepage{fannie.github.io}[https://fannie1208.github.io/]}
   \info{\github{fannie1208}[https://github.com/fannie1208]}
   % \info{\linkedinsquare{alex-chi-skyzh}[https://www.linkedin.com/in/alex-chi-skyzh/?originalSubdomain=cn]}
-  \info{\phone{15317918806}}
+  %\info{\phone{(+86) 15317918806}}
 \end{basicinfo}
 
 \section{Education}
+\cventry{Stanford University}
+{Sep 2024 -- May 2026 (Expected)}
+[Master in Electrical Engineering (AI Track)]
+[Palo Alto, USA]
+\begin{itemize}
+	\item CS221: Artificial Intelligence: Principles and Technique; CS224W: Machine Learning with Graphs
+\end{itemize}
+
 \cventry{Shanghai Jiao Tong University}
-{Sep 2020 -- Jun 2024 (Expected)}
+{Sep 2020 -- Jun 2024}
 [B.Eng in Computer Science and Technology (IEEE Honor Class)]
 [Shanghai, China]
 \begin{itemize}
-	\item GPA 93.38/100, Rank 2/127
-	\item A+ Courses: Data Structure, Operating System, Computer Architecture, Computer Networks, and 19 others
+	\item GPA 92.79/100, Rank 2/122
+	\item A+ Courses: Computer Architecture, Computer Networks, Artificial Intelligence, NLP and 19 others
+	\item Awards: Excellent Graduate (Top 5\%), Undergraduate Excellence Scholarship (Top 1\%), Rong Chang Science and Technology Innovation Scholarship (1/10), Alumni Inheritance Fund (Top 3\%), Outstanding Student Leader
 \end{itemize}
 
-\cventry{École Polytechnique Fédérale de Lausanne(EPFL)}
-  {Feb 2023 -- Aug 2023}
+\cventry{École Polytechnique Fédérale de Lausanne (EPFL)}
+  {Feb 2023 -- Jul 2023}
   [Exchange Student of Computer Science]
   [Lausanne, Switzerland]
   \begin{itemize}
-  	\item Courses: Database System(6.0/6.0), Machine Learning(6.0/6.0), Data Visualization(6.0/6.0)
+  	\item Courses: Database System (6.0/6.0), Machine Learning (6.0/6.0), Data Visualization (6.0/6.0)
   \end{itemize}
+
+\section{Publication}
+
+
+\begin{compactlist}
+	\item (* means equal contribution)
+	
+	\item 1. Z. Li, \textbf{F. Nie}, Q. Sun, F. Da, H. Zhao. \textbf{Uncertainty-Aware Decision Transformer for Stochastic Driving Environments.} \textit{arXiv preprint arXiv:2309.16397, 2023.}
+	\vspace{0.2cm} \textbf{(CoRL  2024 Oral)}.
+	
+	\item 2. Z. Li*, \textbf{F. Nie*}, Q. Sun, F. Da, H. Zhao. \textbf{Boosting Offline Reinforcement Learning for Autonomous Driving with Hierarchical Latent Skills}. \textit{arXiv preprint arXiv:2309.13614}. \textbf{(ICRA  2024 Oral)}.
+	\vspace{0.2cm}
+	
+	\item 3. Q. Wu, \textbf{F. Nie}, C. Yang, J. Yan. \textbf{Learning Divergence Feilds for Generalization with Data Geometries}. \textbf{(ICML 2024)}.
+	\vspace{0.2cm}
+	
+	\item 4.  Q. Wu, \textbf{F. Nie}, C. Yang, T. Bao, J. Yan. \textbf{Graph Out-of-Distribution Generalization via Causal Intervention}. \textit{The ACM Web Conference} \textbf{(WWW  2024 Oral)}.
+	\vspace{0.2cm}
+	
+	%\item 5. Q. Wu, C. Yang, K. Zeng, \textbf{F. Nie}, M. Bronstein, J. Yan. \textbf{Advective diffusion transformers for topological generalization in graph learning}. \textit{arXiv preprint arXiv:2310.06417. (Submitted to ICML’24)}
+	\vspace{0.2cm}
+	
+	\item 5. Q. Wu, W. Zhao, C. Yang, H. Zhang, \textbf{F. Nie}, H. Jiang, Y. Bian, J. Yan. \textbf{Simplifying and Empowering Transformers for Large-graph Representations}. \textit{In Advances in Neural Information Processing Systems} \textbf{(NeurIPS  2023)}.
+	\vspace{0.2cm}
+	
+	\item 6. Z. Li, Q. Wu, \textbf{F. Nie}, J. Yan. \textbf{Graphde: A Generative Framework for Debiased Learning and Out-of-distribution Detection on Graphs}. \textit{In Advances in Neural Information Processing Systems} \textbf{(NeurIPS  2022)}.
+\end{compactlist}
+
 
 \section{Research Experience}
 
+\cventry{Factuality Testing in LLMs}
+{May 2024 -- Present}
+[Submitted to ICLR2025; the First Author]
+[Rutgers]
+
+\begin{itemize}
+	\item Proposed a distribution-free and finite-sample framework via hypothesis testing to statistically evaluate whether an LLM can confidently provide correct answers to given questions with high-probability correctness guarantees.
+\end{itemize}
+
+\cventry{Data Selection on Motion Prediction}
+{July 2024 -- Present}
+[Submitted to ICLR2025; the Co-First Author]
+[VITA, EPFL]
+
+\begin{itemize}
+	\item Designed and implement data selection algorithms leveraging gradient-based data attribution scores on motion prediction datasets.
+	\item Proposed the use of importance weights to emphasize the most significant selected data samples, leading to enhanced performance in downstream trajectory prediction.
+\end{itemize}
+
+
 \cventry{Uncertainty-Aware Decision Transformer}
-{Mar 2023 - Present}
-[CoRL 2023 submission; the Co-First Author]
+{Mar 2023 -- Nov 2023}
+[Full paper accepted by CoRL'24; the Second Author]
 [MARSLab, THU]
 
 \begin{itemize}
-	\item Present an uncertainty-aware decision transformer for stochastic driving environment which can down-weight actions that result in highly uncertain returns to enable DT to focus on learning actions that can accurately achieve target returns.
-	\item Paper; Code; Experiment; Visualization
-	\item Extensive experimental results demonstrate UNREST's superior performance in various driving scenarios and the power of our uncertainty estimation strategy.
+	\item Presented an uncertainty-aware decision transformer (DT) for a stochastic driving environment; estimated state uncertainties by the conditional mutual information and learned to perform aggressively or cautiously based on uncertainty levels.
+	\item Designed, developed, and experimented with the models and training pipelines; conducted 15+ experiments (e.g. planning performance, uncertainty calibration) and visualized robust and exceptional performance of UNREST across diverse driving scenarios; drafted the paper.
+	\item Outperformed state-of-the-art baseline (SPLT) significantly by 11.5\% in terms of driving score.
 \end{itemize}
 
-%\cventry{Skill-Based Offline Motion Planning}
-%{Dec 2022 - Present}
-%[will submit to NeurIPS 2023; the Second Author]
-%[MARSLab, THU]
+\cventry{Skill-Based Offline Motion Planning}
+{Dec 2022 -- Sep 2023}
+[Full paper accepted by ICRA'24; the Co-First Author]
+[MARSLab, THU]
+
+\begin{itemize}
+	\item Introduced a novel skill-based framework enhancing offline RL to overcome the challenge of long-horizon planning in driving environments.
+	\item Employed a two-branch VAE to extract driving skills and visualized them by T-SNE to prove the effectiveness; Conducted motion planning in the CARLA simulator; Drafted the paper and created the demo video to showcase the key ideas and model performance.
+	\item Outperformed state-of-the-art baseline (OPAL) considerably by 11.4\% in terms of driving score.
+\end{itemize}
+
+\cventry{Training Shift-Robust GNNs via Causal Intervention}
+{Oct 2022 -- May 2023}
+[Full paper accepted by WWW'24; the Second Author]
+[Thinklab, SJTU]
+
+\begin{itemize}
+	\item Proposed a novel approach with an environment estimator and a mixture-of-expert GNN predictor to train robust GNNs under node-level distribution shifts.
+	\item Designed and built GNN-based models and training pipelines; conducted 90+ experiments on six datasets to prove the efficacy of our model for OOD generalization.
+	\item Outperformed state-of-the-art models by 12.9\%, showing strong capabilities to generalize results on challenging tasks with significant dataset shift (e.g. node property prediction tasks).
+\end{itemize}
+
+
+%\cventry{Simplifying Transformers for Large-Graph Representations}
+%{July 2022 -- Apr 2023}
+%[Full paper accepted by NeurIPS'23; the Fifth Author]
+%[Thinklab, SJTU]
 
 %\begin{itemize}
-%	\item Present a skill-based framework that enhances offline RL to overcome the challenge of long-horizon planning.
-%	\item Coding; Do experiment; Visualization of extracted skills and experimental results; Paper writing.
-%	\item \textbf{Keywords: Auto Driving, RL, PyTorch}
+%	\item IntrodK yudaouced Simplified Graph Transformers (SGFormer) as a powerful and scalable encoder for large graphs; reduced the complexity of Graph Transformer to linear; innovative combined feature propagation and global attention in design.
+%	\item Built graph transformer baselines and conducted extensive experiments and visualizations to show the model performance over the SOTA model.
+%	\item Outperformed SOTA Transformers up to 25.9\% with great efficiency improvement (141x inference acceleration).
 %\end{itemize}
 
-\cventry{Improving Generalization of GNNs with Divergence Fields Decomposition.}
-{Oct 2022 - May 2023}
-[NeurIPS 2023 Submission; the Second Author]
+\cventry{Debiased Learning and Out-of-Distribution Detection on Graph Data.}
+{Mar 2022 -- Sep 2022}
+[Full paper accepted by NeurIPS'22; the Third Author]
 [Thinklab, SJTU]
 
 \begin{itemize}
-	\item Propose a graph diffusion model with branching-structured divergence fields to improve generalization of GNNS.
-	\item Set up the pipeline and models; Do comparative and ablation experiments to show the model performance; Visualization of experimental results;
-	\item Our GINN perform best in various node property prediction tasks, where training and testing distributions exhibit significant differences, with up to 27.4\% improvement over state-of-the-art models.
-\end{itemize}
-
-
-\cventry{Simplified Graph Transformers Inspired by Gradient Flows.}
-{July 2022 - Jan 2023}
-[ICML 2023 Submission; the Fourth Author]
-[Thinklab, SJTU]
-
-\begin{itemize}
-	\item Propose simplified graph Transformers (SGFormer) as a powerful and scalable encoder for large graphs. SGFormer resorts to simple-yet-effective designs: one or two-layer feature propagation and global attention with linear complexity.
-	\item Set up baselines; Do comparative and ablation experiments to show the model performance; Visualization of experimental results;
-	\item Our SGFormer significantly outperforms SOTA Transformers, with 74x acceleration in terms of training time costs
-\end{itemize}
-
-\cventry{GraphDE: A Generative Framework for Debiased Learning and Out-of-Distribution Detection on Graph Data.}
-{Mar 2022 - Sep 2022}
-[full paper accepted by NeurIPS 2022; the Third Author]
-[Thinklab, SJTU]
-
-\begin{itemize}
-	\item Tackle the problems of outliers in training set and OOD samples from new data in graph data under a unified probabilistic model; Automatically identify and down-weight outliers in the training stage and induce a OOD detector from the model.
-	\item Set up baselines; Conduct 15+ experiments on different datasets to show the model performance and robustness; Visualization of experimental results; Draft and finalize the paper.
-	\item Our model GraphDE achieves consistent performance improvements over the baselines. For example, in the OOD detection task, it outperforms the strongest baseline by 9.31\% on MNIST-75sp.
+	\item Addressed out-of-distribution challenges on graph data by integrating a unified probabilistic model. Automated outlier identifications during training, and concurrently induced a detector for out-of-distribution detection during testing.
+	\item Preprocessed the datasets and employed different methods to introduce OOD samples. Conducted 15+ experiments and visualized results to show the performance (debiasing and OOD detection) and robustness against baselines.
+	\item Outperformed SOTA results with a great edge. E.g. outperforms by 9.31\% on MNIST-75sp in the OOD detection task.
 \end{itemize}
 
 \section{Internship Experience}
-\cventry{Qizhi Institute.}
-{July 2023 – Present}
-[Research Intern]
+\cventry{VITA Lab, EPFL}
+{June 2024 -- Present}
+[Summer Research Intern, Supervised by Prof. Alexandre Alahi]
+[Lausanne, Switzerland]
+
+\begin{itemize}
+	\item Researched on data attribution and data selection methods; Conducted experiments and drafted paper.
+	\item Proposed and implement data selection algorithms on motion prediction datasets to improve domain-specific evaluation performance and accelerate the training process.
+\end{itemize}
+
+\cventry{Shanghai Qizhi Institute.}
+{July 2023 -- Dec 2023}
+[Research Intern, Supervised by Prof. Hang Zhao]
 [Shanghai, China]
 
 \begin{itemize}
-	\item Supervised by Prof. Hang Zhao.
-	\item Research on multimodal learning and autonomous driving.
+	\item Led advanced research on autonomous driving prediction and planning tasks. Designed model optimization strategies and adjustments and implemented codebase on Carla simulator and nuPlan dataset.
+%	\item Explored the reasoning ability of VLMs/LLMs to guide multi-agent interaction prediction in autonomous driving. Designed prompts and combined vectorized and rasterized inputs with texts for better encoding.
 \end{itemize}
 
 \cventry{Biomap, Inc.}
-{Jun 2022 – Dec 2022}
+{July 2022 -- Dec 2022}
 [Algorithm R\&D Intern]
 [Beijing, China]
 
 \begin{itemize}
-	\item Set up the DeepCellState baseline and different types of Attention Free models  to predict changes in gene expression levels after drug interference using PyTorch, and test their performance on our datasets.
-	\item Design and implement data binning, resulting in smaller losses.
-	\item Finetune the pretrained model and raise the f scores.
+	\item Set up the DeepCellState baseline and different types of Attention Free models to predict changes in gene expression levels after drug interference using PyTorch, and tested their performance on large-scale biological datasets.
+	\item Implemented discretization techniques such as equal frequency binning and custom binning to minimize data loss. Finetuned the pretrained model and raised the F1 Score by 6.2\%.
 \end{itemize}
 
 \section{Project Experience}
-\cventry{Coffee Kingdom Visualization.}
-  {Apr 2023 - June 2023}
-  [Course Project for Data Visualization]
-  [\iconlink[\faGithub][fannie1208/project-2023-kingdom\_of\_kaffa]{https://github.com/fannie1208/project-2023-kingdom\_of\_kaffa}]
-\begin{itemize}
-	\item Design and implement an Interactive visualization website to assist those coffee lovers in finding the perfect package of freshly roasted coffee.
-\end{itemize}
+%\cventry{Coffee Kingdom Visualization.}
+%  {Apr 2023 -- June 2023}
+%  [Course Project for Data Visualization]
+%  [\iconlink[\faGithub][fannie1208/project-2023-kingdom\_of\_kaffa]{https://github.com/fannie1208/project-2023-kingdom\_of\_kaffa}]
+%\begin{itemize}
+%	\item Designed and implemented an interactive visualization website to assist those coffee lovers in finding the perfect package of freshly roasted coffee. (Got full marks for this course)
+%\end{itemize}
 
 \cventry{Graph Neural Networks for Scalable Combinatorial Optimization.}
-{Mar 2023 - June 2023}
+{Mar 2023 -- June 2023}
 [Research Project in LIONS, EPFL]
 []
 
 \begin{itemize}
-	\item Speed up the decoding process of solving CO problems with a GNN by directly sampling from the learned probabilities and employ a STE to guide the network in making accurate discrete decisions.
-	\item Code; Experiment; Paper Writing
+	\item Speeded up the decoding process of solving CO problems with a GNN by directly sampling from the learned probabilities and employed a STE to guide the network in making accurate discrete decisions.
 \end{itemize}
 
-\cventry{PLI-Python-based-Lambda-Interpreter}
-  {Dec 2022 - Jan 2023}
-  [Course Project for Programming Language]
-  [\iconlink[\faGithub][FKCSP/PLI-Python-based-Lambda-Interpreter]{https://github.com/FKCSP/PLI-Python-based-Lambda-Interpreter}]
-  \begin{itemize}
-    \item Design and implement a lambda interpreter based on Python that supports arithmetic operations, size comparisons, conditional branches, and recursive functions.
-  \end{itemize}
+%\cventry{PLI-Python-based-Lambda-Interpreter}
+%  {Dec 2022 -- Jan 2023}
+%  [Course Project for Programming Language]
+%  [\iconlink[\faGithub][FKCSP/PLI-Python-based-Lambda-Interpreter]{https://github.com/FKCSP/PLI-Python-based-Lambda-Interpreter}]
+%  \begin{itemize}
+%    \item Designed and implemented a lambda interpreter based on Python that supports arithmetic operations, size comparisons, conditional branches, and recursive functions. (Got full marks for this course)
+%  \end{itemize}
+
+% \section{Extracurricular Activities}
+% \cventry{Youth Volunteer Team}
+% [Minister of Planning]
+% [SJTU, Shanghai]
+% 
+% \begin{itemize}
+% 	\item Planned and organized various volunteer activities such as Shanghai Marathon volunteers, etc.; Wrote planning cases and coordinated with different departments.
+% 	\item Interviewed over 50+ volunteer applicants; instructed volunteers and allocated tasks to teammates.
+% \end{itemize}
 
 \section{Skills}
 
 \begin{compactlist}
-  \item \textbf{Programming Languages}: Python, C++, JavaScript, HTML, CSS
-  \item \textbf{Tech Skills}: MySQL, PyTorch, Data Visualization, Web Development, Web Crawler
+	\item \textbf{Programming Languages}: Python, C++, JavaScript, HTML, CSS
+	\item \textbf{Tech Skills}: PyTorch, Linux, DeepSpeed, MySQL, Data Visualization, Web Development, Web Crawler
 \end{compactlist}
 
-\section{Extracurricular Activities}
-\cventry{Youth Volunteer Team}
-{Mar 2021 - Dec 2022}
-[Minister of Planning]
-[SJTU, Shanghai]
+\section{Professional Service}
 
-\begin{itemize}
-	\item Plan and organize various volunteer activities such as Shanghai Marathon volunteers, etc.; Write planning cases and liaise with different departments.
-\end{itemize}
+\begin{compactlist}
+	\item \textbf{Conference Reviewer}: ICRA 2024, Neurips 2025, ICLR 2025
+\end{compactlist}
+
 \end{document}
